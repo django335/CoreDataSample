@@ -12,6 +12,17 @@ import CoreData
 
 @objc(Book)
 public class Book: NSManagedObject {
+
+  var recently:NSNumber? {
+    let cal = NSCalendar.current
+    let oneMonthAgo = cal.date(byAdding: .month, value: -1, to: Date())
+    let date = primitiveValue(forKey: "registeredDate") as! Date
+    if cal.compare(date, to: oneMonthAgo!, toGranularity: .day) == .orderedDescending {
+      return true
+    }
+    return false
+  }
+
   public override func awakeFromInsert() {
     super.awakeFromInsert()
 
