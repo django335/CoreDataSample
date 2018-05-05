@@ -16,29 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-    // working check code
-
-    let coreDataStack = CoreDataStack()
-    coreDataStack.addPersistentStoreWithCompletionHandler {
-      let book = NSEntityDescription.insertNewObject(forEntityName: "Book", into: coreDataStack.context) as! Book
-/*
-      book.setValue("Hamlet", forKey: "title")
-      book.setValue("Shakespeare", forKey: "author")
-
-      let title = book.value(forKey: "title") as! String
-      let author = book.value(forKey: "author") as! String
-*/
-
-      book.title = "Hamlet"
-      book.author = "Shakespeare"
-
-//      print("title = \(title) : author = \(author)")
-      print("title = \(book.title!) : author = \(book.author!)")
-      print("registeredDate=\(book.registeredDate!)")
-    }
-
-
     return true
   }
 
