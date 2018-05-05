@@ -45,10 +45,11 @@ class CoreDataStack {
     backgroundQueue.async {
       let dirURL = self.appDocumentDirURL
       let storeURL = dirURL.appendingPathComponent("BookList.sqlite")
+      let options = [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true]
 
       do {
         let coordinator = self.context.persistentStoreCoordinator!
-        try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+        try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: options)
         completionHandler?()
 
       } catch let error as NSError {

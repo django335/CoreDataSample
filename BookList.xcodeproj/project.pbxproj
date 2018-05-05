@@ -57,6 +57,7 @@
 		D80CE2FD209C2F4F0001427C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D80CE307209C4B810001427C /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D80CE308209C4B810001427C /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D85866C3209D6B7000639C28 /* BookListModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BookListModel 2.xcdatamodel"; sourceTree = "<group>"; };
 		D8F0F26F209D448D00956819 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		D8F0F271209D48B200956819 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -587,9 +588,10 @@
 		D80CE2FA209C2E7B0001427C /* BookListModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D85866C3209D6B7000639C28 /* BookListModel 2.xcdatamodel */,
 				D80CE2FB209C2E7B0001427C /* BookListModel.xcdatamodel */,
 			);
-			currentVersion = D80CE2FB209C2E7B0001427C /* BookListModel.xcdatamodel */;
+			currentVersion = D85866C3209D6B7000639C28 /* BookListModel 2.xcdatamodel */;
 			path = BookListModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
